@@ -1,0 +1,167 @@
+/*************************************************************/
+/* HEADER */
+/*************************************************************
+
+/******************************************************/
+/* Navigation*/
+/******************************************************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+/* increce specificity for this component */
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 4.6rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/*************************************************************/
+/*************************************************************/
+/* HERO SECTION */
+/*************************************************************/
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  gap: 9.6rem;
+  max-width: 130rem;
+  /* background-color: tomato; */
+}
+
+.hero-descripton {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.2rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  display: flex;
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  border: 3px solid #fdf2e9;
+  margin-right: -1.6rem;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #e67e22;
+  font-weight: 700;
+}
+
+/******************************************************/
+/* How it works SECTION */
+/******************************************************/
+.section-how {
+  padding: 9.6rem 0;
+  /* background-color: tomato; */
+}
+
+.step-number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img {
+  width: 35%;
+}
+
+/* .section-how div div {
+  padding: 100px;
+  font-size: 50px;
+}
+.section-how .container div:nth-child(1) {
+  background-color: royalblue;
+}
+.section-how .container div:nth-child(2) {
+  background-color: yellow;
+}
+.section-how .container div:nth-child(3) {
+  background-color: rebeccapurple;
+}
+.section-how .container div:nth-child(4) {
+  background-color: aqua;
+}
+.section-how .container div:nth-child(5) {
+  background-color: #fff;
+} */
