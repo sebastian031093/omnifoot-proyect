@@ -26,8 +26,13 @@ Paragraph default: 1.6
 -- 02) COLORS
 
 - Primary: #e67e22
-- Tints: #fdf2e9
+- Tints: 
+#fdf2e9
+#fae5d3
+#eb984e
 - Shades:
+#cf711f
+#45260a
 - Accents:
 - Greys:
 #6f6f6f
@@ -35,12 +40,12 @@ Paragraph default: 1.6
 #555
 
 --- 05) SHADOWS
-Defoult: 9px
-Mediun: 12px
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 
 --- 06) BORDER-RADIOS\
-Default: 9px
+Defoult: 9px
+Mediun: 12px
 
 
 
@@ -53,6 +58,11 @@ Default: 9px
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.521);
 }
 
 html {
@@ -110,6 +120,7 @@ strong {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -118,6 +129,11 @@ strong {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  /* only styled for the btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /*#TODO Put transition on origina; state */
   /* transition: background-color 0.3s; */
@@ -128,6 +144,18 @@ strong {
 .btn--full:visited {
   background-color: #e67e22;
   color: #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #333;
 }
 
 .btn--full:hover,
