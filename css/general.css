@@ -35,6 +35,8 @@ Paragraph default: 1.6
 #45260a
 - Accents:
 - Greys:
+#888
+#767676
 #6f6f6f
 #777
 #555
@@ -68,6 +70,7 @@ Mediun: 12px
 html {
   /* font-size: 10px; 1 rem = 10px */
   font-size: 62.5%; /* 10px / 16px = 62.5% */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -261,6 +264,10 @@ strong {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {

@@ -16,15 +16,19 @@
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="img/omnifood-logo.png" alt="omnifood logo" />
+      <a href="#">
+        <img class="logo" src="img/omnifood-logo.png" alt="omnifood logo" />
+      </a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link" href="#">Section 2</a></li>
-          <li><a class="main-nav-link" href="#">Section 3</a></li>
-          <li><a class="main-nav-link" href="#">Section 4</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
+          <li>
+            <a class="main-nav-link" href="#how-it-works">How it works</a>
+          </li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li><a class="main-nav-link" href="#estimonials">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#log-ing">log in</a></li>
         </ul>
       </nav>
     </header>
@@ -89,7 +93,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section id="how-it-works" class="section-how">
         <div class="container">
           <span class="subheadline">How it works</span>
           <h2 class="headline-secondary">
@@ -158,7 +162,7 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section id="meals" class="section-meals">
         <div class="container center-text">
           <span class="subheadline">Meals</span>
           <h2 class="headline-secondary">
@@ -302,7 +306,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section id="testimonials" class="section-testimonials">
         <div class="testimonals-container">
           <span class="subheadline">Testimonials</span>
           <h2 class="headline-secondary">Once you try it, you can't go back</h2>
@@ -408,7 +412,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-precing">
+      <section id="pricing" class="section-precing">
         <div class="container">
           <span class="subheadline">Pricing</span>
           <h2 class="headline-secondary">
@@ -543,7 +547,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section id="log-ing" class="section-cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -601,6 +605,83 @@
         </div>
       </section>
     </main>
+
+    <footer id="footer" class="footer">
+      <div class="container grid footer-grid">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" src="img/omnifood-logo.png" alt="omnifood logo" />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-slack"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; 2027 by Ommifoo, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contac us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+            </p>
+            <p>
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >hello@omnifood.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
     <script
       type="module"
