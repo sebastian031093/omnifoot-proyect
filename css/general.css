@@ -209,6 +209,7 @@ strong {
   display: flex;
   align-items: center;
   gap: 1.8rem;
+  line-height: 1.2rem;
 }
 
 .list-icon {
