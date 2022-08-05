@@ -1,6 +1,17 @@
 /*************************************************************/
 /* HEADER */
-/*************************************************************
+/*************************************************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 4.6rem;
+  /* position: relative; */
+}
 
 /******************************************************/
 /* Navigation*/
@@ -52,20 +63,30 @@
   display: none;
 }
 
+/******************************************************/
+/* Sticky navigation*/
+/******************************************************/
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.959);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fdf2e9;
-
-  height: 9.6rem;
-  padding: 0 4.6rem;
-  position: relative;
 }
 
 .logo {
@@ -206,16 +227,14 @@
   /* height: 60%; */
   /* 60% of parent's  width */
   padding-bottom: 60%;
-  /* #TODO:change color #fdf2e9 */
-  background-color: tomato;
+  background-color: #fdf2e9;
   z-index: -2;
 }
 
 .step-img-box::after {
   width: 50%;
   padding-bottom: 50%;
-  /* #TODO: Cchange color #fae5d3*/
-  background-color: yellowgreen;
+  background-color: #fae5d3;
   z-index: -1;
 }
 
@@ -255,7 +274,7 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
   overflow: hidden;
-  background-color: tomato;
+  background-color: #fff;
   transition: all 0.3s;
 }
 
