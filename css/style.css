@@ -35,6 +35,23 @@
   color: #fff;
 }
 
+.btn-movil-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-movil-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-movil-nav[name="close-outline"] {
+  display: none;
+}
+
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
@@ -48,6 +65,7 @@
 
   height: 9.6rem;
   padding: 0 4.6rem;
+  position: relative;
 }
 
 .logo {
@@ -568,7 +586,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(2, 2fr) repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1.5fr) repeat(3, 1fr);
 }
 
 .logo-col {

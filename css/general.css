@@ -71,12 +71,14 @@ html {
   /* font-size: 10px; 1 rem = 10px */
   font-size: 62.5%; /* 10px / 16px = 62.5% */
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   color: #555;
+  overflow-x: hidden;
 }
 
 strong {
